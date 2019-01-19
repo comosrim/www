@@ -1,0 +1,111 @@
+﻿<html>
+  <head>
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type='text/javascript'>
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Nick', 'Count'],
+          ["wlgy", 6],
+          ["cafac", 6],
+          ["겨울엔귤이지", 6],
+          ["백원할인", 3],
+          ["해물쌍피", 3],
+          ["jj3384", 3],
+          ["사소한", 2],
+          ["우렐레", 2],
+          ["OrByDOby", 2],
+          ["추이형님", 2],
+          ["개론", 2],
+          ["Korea1023", 2],
+          ["슈퍼컴v", 2],
+          ["잠실", 2],
+          ["오리엔테이션", 2],
+          ["니조랄", 2],
+          ["정확맨", 1],
+          ["오프화이트", 1],
+          ["우리애미님", 1],
+          ["킹어굳", 1],
+          ["dffefefef", 1],
+          ["진저엘", 1],
+          ["caneun", 1],
+          ["나노캡슐", 1],
+          ["미러링", 1],
+          ["마른꽃잎", 1],
+          ["하루한끼다", 1],
+          ["sdewqrvgas", 1],
+          ["배터리가빵빵", 1],
+          ["17금", 1],
+          ["패미콤", 1],
+          ["홍실짱", 1],
+          ["와쿠와캉", 1],
+          ["쌍베", 1],
+          ["린민메이", 1],
+          ["옥수수치과", 1],
+          ["쿵찌", 1],
+          ["일향", 1],
+          ["다다닫ㅁ", 1],
+          ["truthtimes", 1],
+          ["네덜란드쭌", 1],
+          ["왕머쨍이", 1],
+          ["ddonggass", 1],
+          ["뚜또짱", 1],
+          ["반가월", 1],
+          ["☆Sex★King☆", 1],
+          ["나눔의미학", 1],
+          ["아이린스1", 1],
+          ["Gosan", 1],
+          ["unite", 1],
+          ["촬라리", 1],
+          ["별의미없다", 1],
+          ["뽀삐구리", 1],
+          ["디스피는여자", 1],
+          ["플로리안", 1],
+          ["한게임두게임", 1],
+          ["쉬는시간임", 1],
+          ["soso55", 1],
+          ["푸른날개바람", 1],
+          ["KosTV™", 1],
+          ["abba1221", 1],
+          ["re98398", 1],
+          ["강박증", 1],
+          ["오라클OR", 1],
+          ["초쵸", 1],
+          ["Memento3", 1],
+          ["오모리학교", 1],
+          ["매일이일요일", 1],
+          ["SmallHappy", 1],
+          ["peeel", 1],
+          ["성난돼지", 1],
+          ["dogdo", 1],
+          ["하늘로가자", 1],
+          ["입다더이노무시키", 1],
+        ]);
+
+        var options = {
+          title: 'tcafe',
+          width: 700,
+          legend: { position: 'none' },
+          chart: { title: '티카페 자유공간',
+                   subtitle: '2019-01-18일 게시물 작성 수' },
+          bars: 'horizontal',
+          axes: {
+            x: {
+              0: { side: 'top', label: '게시물 작성 수'}
+            }
+          },
+          bar: { groupWidth: '90%' }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+    </script>
+  </head>
+  <body>
+    <div id='top_x_div' style='width: 700px; height: 1000px;'></div>
+  </body>
+</html>
+
